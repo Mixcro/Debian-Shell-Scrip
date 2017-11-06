@@ -11,7 +11,7 @@ read -p "Local IP(默认192.168.3.1):" ip
 read -p "Start of DHCP(默认192.168.3.2):" start
 [ -z "$start" ] && start=192.168.3.2
 read -p "End of DHCP(默认192.168.3.100):" end
-[ -z "$end" ] && sel=end
+[ -z "$end" ] && end=192.168.3.100
 read -p "Name of AP:" name
 read -p "Password:" ser
 cat >>/etc/dnsmasq.conf <<-EOF
